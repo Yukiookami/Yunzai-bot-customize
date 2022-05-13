@@ -1,0 +1,50 @@
+{
+  "name": "yunzai",
+  "version": "2.1.5",
+  "homepage": "https://github.com/Le-niao/Yunzai-Bot",
+  "author": "Le-niao",
+  "description": "Genshin QQ group Bot",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": ">= v14"
+  },
+  "scripts": {
+    "app": "node ./app.js",
+    "debug": "node ./app.js debug",
+    "test": "node ./tools/test.js",
+    "start": "pm2 start ./config/pm2/pm2.json",
+    "stop": "pm2 stop Yunzai",
+    "restart": "pm2 restart Yunzai",
+    "list": "pm2 list",
+    "log": "pm2 logs --lines 200 Yunzai",
+    "web": "node ./tools/web.js"
+  },
+  "keywords": [
+    "qqBot",
+    "genshin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "baidu-aip-sdk": "^2.0.2",
+    "image-size": "^1.0.1",
+    "lodash": "^4.17.21",
+    "log4js": "^6.4.0",
+    "md5": "^2.3.0",
+    "moment": "^2.29.3",
+    "node-fetch": "^3.0.0",
+    "node-schedule": "^2.1.0",
+    "oicq": "^2.2.1",
+    "pm2": "^5.1.2",
+    "prettier": "^2.4.1",
+    "puppeteer": "^13.5.1",
+    "redis": "^4.1.0",
+    "request": "^2.88.2",
+    "tencentcloud-sdk-nodejs": "^4.0.285"
+  },
+  "devDependencies": {
+    "express": "^4.17.3",
+    "express-art-template": "^1.0.1"
+  }
+}
